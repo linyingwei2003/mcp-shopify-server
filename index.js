@@ -1,18 +1,6 @@
 // index.js
 require('dotenv').config();
 
-// --- START OF DEBUGGING BLOCK ---
-console.log('--- DEBUGGING ENV VARIABLES ---');
-console.log('Store URL Loaded:', process.env.SHOPIFY_STORE_URL);
-if (process.env.SHOPIFY_ACCESS_TOKEN) {
-    console.log('Access Token Loaded: Yes, first 5 chars are "' + process.env.SHOPIFY_ACCESS_TOKEN.substring(0, 5) + '"');
-} else {
-    console.log('Access Token Loaded: NO, THE VARIABLE IS UNDEFINED');
-}
-console.log('-----------------------------');
-// --- END OF NEW DEBUGGING BLOCK ---
-
-
 const express = require('express');
 const cors = require('cors');
 const axios = require('axios');
